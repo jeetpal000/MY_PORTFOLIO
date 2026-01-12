@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-dancing:  "Dancing Script", cursive;
+  --font-agbalumo: "Agbalumo", system-ui;
+  --font-inter: "inter", sans-serif;
+}
+
+*{
+    /* padding: 0; */
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+html, body{
+    background: #0D1224;
+    color: white;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s alternate infinite;
+}
+
+.multi-gradient {
+  background: linear-gradient(to right,
+    transparent,
+    rgb(239, 36, 254),
+    rgb(18, 18, 255),
+    transparent
+  );
+}
+
+@keyframes movebin {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+.movebin{
+  animation: movebin 1.8s ease-in-out infinite;
+  /* position: relative; */
+}
+
+@keyframes movelaptop {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.movelaptop{
+  animation: movelaptop 1.8s ease-in-out infinite;
+}
+
+@keyframes jumps {
+  0%{
+    transform: scale(0);
+  }
+  15%{
+    transform: scale(1.1);
+  }
+  25%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1);
+  }
+  
+  75%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(0.2);
+  }
+}
+.jump{
+  animation: jumps 4s linear infinite;
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.shimmerEffect {
+  background: radial-gradient(#ff00d0 70%, #4608ff 50%, #06e6ff);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+
+.cart{
+    animation: carts 2s linear infinite;
+}
+
+@keyframes carts {
+  0%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
