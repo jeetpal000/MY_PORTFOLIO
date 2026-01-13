@@ -10,7 +10,7 @@ const Skill = () => {
             <span className="bg-[#1a1443] w-fit p-2 px-5 text-2xl rounded-md drop-shadow-[0_0_20px_#1e1463]">Skill</span>
             <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
-        <div className="flex items-center justify-center overflow-hidden py-10">
+        <div className="flex items-center justify-center overflow-hidden max-sm:py-5 py-10 px-1">
             <SkillCart />
         </div>
     </div>

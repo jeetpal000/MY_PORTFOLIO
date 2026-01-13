@@ -6,9 +6,9 @@ import { FaHackerrank } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
-    <div className="mt-30 flex justify-between items-center p-5">
-      <div className="w-1/2">
-        <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-14">
+    <div className="mt-30 max-sm:mt-15 flex flex-row p-5 max-sm:p-1 max-sm:flex-col max-sm:gap-10">
+      <div className="max-sm:w-full">
+        <h1 className="text-3xl font-bold leading-10 text-white max-sm:text-2xl md:font-extrabold lg:text-[2.6rem] lg:leading-14">
           Hello,
           <br />
           This is{" "}
@@ -22,7 +22,7 @@ const HeroSection = () => {
               typeSpeed={200}
               deleteSpeed={170}
               delaySpeed={3000}
-            />
+            /> 
           </span> */}
           <br />
           I'm a Professional
@@ -30,18 +30,18 @@ const HeroSection = () => {
           <span className="text-[#16F2A5]">Full Stack Software Developer</span>.
         </h1>
 
-        <nav className="mt-8 flex gap-5">
+        <nav className="mt-8 max-sm:mt-2 w-full flex max-sm:justify-center max-sm:items-center gap-5">
           <FaGithub className=" cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
           <FaLinkedin className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
           <FaXTwitter className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
           <FaHackerrank className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
         </nav>
-        <div class=" mt-8 flex items-center gap-3">
+        <div class=" mt-8 flex items-center gap-3 max-sm:justify-center">
           <a
             class=" cursor-pointer p-px bg-linear-to-r to-pink-500 from-violet-600 p-1px rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
             href="#contact"
           >
-            <button class="cursor-pointer md:px-8  md:py-4 bg-[#11172d] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
+            <button class="cursor-pointer bg-[#11172d] px-2  py-2 rounded-full border-none text-center font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
               <span>Contact me</span>
               <svg
                 stroke="currentColor"
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </button>
           </a>
           <a
-            class=" cursor-pointer flex items-center gap-1 hover:gap-3 rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+            class=" cursor-pointer flex items-center gap-1 hover:gap-3 rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-3  py-3  text-center text-xs font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline "
             role="button"
             target="_blank"
             href="https://drive.google.com/file/d/1HAM5DGjREbGPh5_DiyE-U2Y_4J5o3Zop/view?usp=sharing"
@@ -78,7 +78,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div class="w-1/2 rounded-md border-[0.1px] border-[#141847]">
+      <div class="w-1/2 max-sm:w-full rounded-md border-[0.1px] border-[#141847]">
         <div className=" w-full h-px bg-linear-to-l multi-gradient"></div>
         <div class="bg-[#101828be] text-white rounded-lg w-full">
           <div className="flex gap-2 p-3">
@@ -87,8 +87,8 @@ const HeroSection = () => {
             <p className="p-1.5 bg-blue-300 rounded-full"></p>
           </div>
           <div className=" w-full h-px bg-blue-800"></div>
-          <div className="p-3">
-            <code className="text-gray-400">
+          <div className="p-3 max-sm:p-1">
+            <code className="text-gray-400 max-sm:text-[14px]">
               <p className="">
                 <span className="text-pink-500">const</span>{" "}
                 <span className="text-amber-50">coder</span>{" "}

@@ -34,7 +34,7 @@ const Header = () => {
 
         <nav className="py-2 px-4">
           {" "}
-          <ul className="flex gap-7">
+          <ul className="flex gap-7 @sm:flex-col">
             {" "}
             {navItems.map((item) => (
               <li key={item.id} className="relative group">
