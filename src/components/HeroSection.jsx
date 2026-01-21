@@ -3,11 +3,21 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaHackerrank } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1200,
+      
+    });
+    AOS.refresh();
+  }, [])
   return (
-    <div className="mt-30 max-sm:mt-15 flex flex-row p-5 max-sm:p-1 max-sm:flex-col max-sm:gap-10">
-      <div className="max-sm:w-full">
+    <div className="mt-30 max-sm:mt-15 flex flex-row justify-between p-5 max-sm:p-1 max-sm:flex-col max-sm:gap-10">
+      <div data-aos="slide-right" className="max-sm:w-full">
         <h1 className="text-3xl font-bold leading-10 text-white max-sm:text-2xl md:font-extrabold lg:text-[2.6rem] lg:leading-14">
           Hello,
           <br />
@@ -78,9 +88,10 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div class="w-1/2 max-sm:w-full rounded-md border-[0.1px] border-[#141847]">
+      
+      <div data-aos="slide-left" data-aos-offset="100" className="w-1/2 max-sm:w-full rounded-md border-[0.1px] border-[#141847]">
         <div className=" w-full h-px bg-linear-to-l multi-gradient"></div>
-        <div class="bg-[#101828be] text-white rounded-lg w-full">
+        <div className="bg-[#101828be] text-white rounded-lg w-full">
           <div className="flex gap-2 p-3">
             <p className="p-1.5 bg-amber-700 rounded-full"></p>
             <p className="p-1.5 bg-amber-500 rounded-full"></p>

@@ -2,6 +2,7 @@ import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router
 import Home from './Home'
 import Layout from './layout/Layout'
 import Project from './pages/Project'
+import CustomCursor from './components/CustomCursor'
 
 const App = () => {
   const router = createBrowserRouter([

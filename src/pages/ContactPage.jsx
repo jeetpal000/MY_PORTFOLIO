@@ -1,5 +1,7 @@
 import React from 'react'
 import Contact from "../components/Contact.jsx"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactPage = () => {
   return (

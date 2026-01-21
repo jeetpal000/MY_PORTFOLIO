@@ -1,15 +1,25 @@
 import Tilt from "react-parallax-tilt"
 import {project} from '../Data/project.js'
 import {FaGithub} from "react-icons/fa6"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Project = () => {
+    useEffect(()=>{
+    AOS.init({
+      duration: 1200,
+      
+    });
+    AOS.refresh();
+  }, [])
   return (
     <>
     {
       project.map((item, index)=>(
         
         <Tilt key={index} className="w-90 cursor-pointer bg-gray-600 rounded-xl transform-3d p-5 shadow-[0_0_10px_0px_gray] duration-500" perspective={500} >  
-  <div className="translate-z-14 p-4 hover:scale-110 duration-500">
+  <div data-aos="fade-up" className="translate-z-14 p-4 hover:scale-110 duration-500">
     <h2 className="text-xl font-bold text-center pb-3">
       {item.name}
     </h2>

@@ -1,13 +1,23 @@
 import { GrCertificate } from "react-icons/gr";
 import { qualification } from "../Data/qualification";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Qualification = () => {
+    useEffect(()=>{
+    AOS.init({
+      duration: 1200,
+      
+    });
+    AOS.refresh();
+  }, [])
   return (
     <>
       {qualification.map((qualification, type) => (
-        <div
+        <div data-aos="fade-up"
           key={type}
-          className="relative hover:p-2 transition-all duration-100 rounded-xl shimmerEffect my-4 max-sm:my-2 cursor-pointer"
+          className="relative hover:p-[2px] transition-all overflow-hidden duration-100 rounded-xl shimmerEffect my-4 max-sm:my-2 cursor-pointer"
         >   
         <div className="absolute inset-0 rounded-xl bg-linear-to-r from-[#80008080] via-[#ffc0cb69] to-[#0000ff8c] blur-2xl"></div>
           <div className="relative rounded-xl bg-[#140234] py-4 px-7 max-sm:p-3 hover:drop-shadow-[0_0_40px_#1e1463]">
