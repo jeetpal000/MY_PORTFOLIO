@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <nav className="py-2 px-4 max-sm:py-0">
 
-      {isOpen ? (<button className="text-2xl mb-5 cursor-pointer hidden max-sm:block transition-all p-2 hover:bg-[#ffffff69] focus:bg-[#ffffff69] rounded w-full text-left" onClick={()=>setIsOpen(!isOpen)} >❌</button>): (<button className="text-2xl hidden max-sm:block hover:bg-[#ffffff72] focus:bg-[#ffffff69] rounded p-2 cursor-pointer" onClick={()=>setIsOpen(!isOpen)} >🟰</button>)}
+      {isOpen ? (<button className="text-2xl mb-5 cursor-pointer hidden max-sm:block transition-all p-2 hover:bg-[#ffffff69] active:bg-[#ffffff69] rounded w-full text-left" onClick={()=>setIsOpen(!isOpen)} >❌</button>): (<button className="text-2xl hidden max-sm:block hover:bg-[#ffffff72] active:bg-[#ffffff69] rounded p-2 cursor-pointer" onClick={()=>setIsOpen(!isOpen)} >🟰</button>)}
       
           {" "}
           <ul className="flex gap-7 max-sm:hidden">
