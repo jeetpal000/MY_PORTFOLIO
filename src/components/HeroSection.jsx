@@ -1,7 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,11 +19,12 @@ const HeroSection = () => {
     <div className="mt-30 max-sm:mt-15 flex flex-row justify-between p-5 max-sm:p-1 max-sm:flex-col max-sm:gap-10">
       <div data-aos="slide-right" className="max-sm:w-full">
         <h1 className="text-3xl font-bold leading-10 text-white max-sm:text-2xl md:font-extrabold lg:text-[2.6rem] lg:leading-14">
-          Hello,
+         <span className="text-[#ff9428]">Hello,</span> 
           <br />
           This is{" "}
-          <span className="text-[#F6339A]"> CHANDRAJEET PAL</span>,
-          {/* <span className="bg-gradient-to-r from-pink-500 via-blue-500 to-pink-500 bg-clip-text text-transparent">
+          <span clas></span>
+          {/* <span className="text-[#F6339A]"> CHANDRAJEET PAL</span>, */}
+          <span className="text-[#F6339A]">
             <Typewriter
               words={["CHANDRAJEET"]}
               loop={true}
@@ -33,7 +34,7 @@ const HeroSection = () => {
               deleteSpeed={170}
               delaySpeed={3000}
             /> 
-          </span> */}
+          </span>
           <br />
           I'm a Professional
           <br />
@@ -41,10 +42,20 @@ const HeroSection = () => {
         </h1>
 
         <nav className="mt-8 max-sm:mt-2 w-full flex max-sm:justify-center max-sm:items-center gap-5">
-          <FaGithub className=" cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
-          <FaLinkedin className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
-          <FaXTwitter className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
+          <a href="https://github.com/jeetpal000/jeetpal000/tree/main" target="_blank">
+              <FaGithub className=" cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
+          </a>
+        <a href="https://www.linkedin.com/in/jeetpal000/" target="_blank">
+  <FaLinkedin className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
+        </a>
+        <a href="https://leetcode.com/u/CHANDRAJEET_PAL/" target="_blank">
+          <SiLeetcode className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
+
+        </a>
+        <a href="#">
           <FaHackerrank className="cursor-pointer text-pink-500 text-4xl transform transition-transform duration-300 hover:scale-125" />
+        </a>
+        
         </nav>
         <div class=" mt-8 flex items-center gap-3 max-sm:justify-center">
           <a
