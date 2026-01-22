@@ -14,7 +14,7 @@ const About = () => {
     }, [])
   return (
     <section className="relative p-2 flex flex-row justify-between max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:mt-10">
-      <div  className=" absolute z-1 rotate-270 max-sm:rotate-0 -left-20 max-sm:left-0 top-[30%] max-sm:top-[-90px] flex items-center justify-center py-10 ">
+      <div  className=" absolute z-1 rotate-270 max-sm:rotate-0 -left-20 max-sm:left-5 top-[30%] max-sm:top-[-90px] flex items-center justify-center py-10 ">
             <span className="w-24 h-[2px] bg-[#1a1443]"></span>
             <span className="bg-[#1a1443] w-fit p-2 px-5 text-2xl max-sm:text-xl rounded-md drop-shadow-[0_0_20px_#1e1463]">ABOUT ME</span>
             <span className="w-24 h-[2px] bg-[#1a1443]"></span>

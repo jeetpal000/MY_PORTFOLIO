@@ -102,7 +102,7 @@ const HeroSection = () => {
       
       <div data-aos="slide-left" data-aos-offset="100" className="w-1/2 max-sm:w-full rounded-md border-[0.1px] border-[#141847]">
         <div className=" w-full h-px bg-linear-to-l multi-gradient"></div>
-        <div className="bg-[#101828be] text-white rounded-lg w-full">
+        <div className="bg-[#101828f8] text-white rounded-lg w-full">
           <div className="flex gap-2 p-3">
             <p className="p-1.5 bg-amber-700 rounded-full"></p>
             <p className="p-1.5 bg-amber-500 rounded-full"></p>
