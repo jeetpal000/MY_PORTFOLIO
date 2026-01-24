@@ -15,7 +15,7 @@ const Header = () => {
   ];
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mx-auto  backdrop-blur-md">
-      <div className={`bg-[#2c255178] max-w-360 shadow-2xl  mx-auto flex justify-between items-center ${isOpen? "items-start w-[40%] mr-0 ": ""}`}>
+      <div className={`bg-[#2c255178] max-w-360 shadow-2xl  mx-auto flex justify-between items-center ${isOpen? "items-start w-[60%] mr-0 ": ""}`}>
         <div className="py-2 px-4 text-5xl font-black font-agbalumo max-sm:py-0 max-sm:text-xl">
           <NavLink onClick={()=>setIsOpen(false)} to="/" className="relative inline-block">
             <span
@@ -127,7 +127,7 @@ const Header = () => {
                 )}
               </li>
             ))}
-            <div className="absolute bottom-10 right-6 whitespace-nowrap text-xs">
+            <div className="absolute bottom-25 right-20 whitespace-nowrap text-xs">
             <CopyrightPage />
             </div>
           </ul>
