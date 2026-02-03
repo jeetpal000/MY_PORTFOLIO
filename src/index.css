@@ -20,7 +20,7 @@ html, body{
     width: 100%;
     scroll-behavior: smooth;
     /* cursor: none; */
-    /* position: relative; */
+    position: relative;
  
 }
 
@@ -157,3 +157,25 @@ html, body{
   }
 }
 
+.move{
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(to left, blue, rgb(234, 45, 77), green);
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  animation: Move 2s linear infinite;
+}
+
+@keyframes Move {
+ 0%{
+  transform: scale(1.5) rotate(0deg);
+  
+ }
+ 100%{
+  transform: scale(1) rotate(360deg);
+ }
+}

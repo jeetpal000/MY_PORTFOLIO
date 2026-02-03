@@ -3,6 +3,7 @@ import spaceTourism from "../assets/projects/space-toursim-image.png"
 import urlShortener from '../assets/projects/urlShortner-image.png'
 import restCountries from "../assets/projects/restCountries-image.png"
 
+
 export const project = [
     {
         name: " 🎯Focus on Today",
@@ -26,7 +27,7 @@ export const project = [
         repoLink: "https://github.com/jeetpal000/URL-Shortener",
     },
     {
-        name: "Focus on Today",
+        name: "Rest Countries🌍 API",
         description: "A sleek, responsive web app that lets users explore detailed information about countries using the REST Countries API. Built with HTML, CSS, and JavaScript, this project showcases dynamic data fetching, interactive UI, and clean design.",
         img: restCountries,
         liveLink: "https://jeetpal000.github.io/REST-Countries/",
