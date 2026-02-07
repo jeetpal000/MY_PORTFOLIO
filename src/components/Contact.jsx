@@ -6,33 +6,33 @@ import { FaGithub } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import { MdCall } from "react-icons/md";
 import { IoAtOutline } from "react-icons/io5";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {toast} from "react-toastify"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
-    console.log(form.current);
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm("service_zxw0lm3", "template_5w6952m", form.current, {
         publicKey: "K0ZyX9H86vnE7KMY5",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
           form.current.reset();
          toast.success("Message sent successfully.", { position: "top-right", autoClose: 3000 });
         toast.info("I'll connect shortly", { position: "top-right", autoClose: 4000 });
-
+          setLoading(false)
         },
         (error) => {
           console.log("FAILED...", error.text);
           toast.error("❌ Error Message not send", {position: "top-right", autoClose: 3000})
+          setLoading(false);
         }
       );
   };
@@ -131,10 +131,11 @@ const Contact = () => {
             </div>
             <div className="flex flex-col items-center gap-3 max-sm:gap-0">
               <button data-aos="fade-up" 
+              disabled={loading}
                 className="flex items-center gap-1 hover:gap-3 cursor-pointer rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                 role="button" type="submit"
               >
-                <span className="flex items-center gap-1">Send Message </span>
+                <span className="flex items-center gap-1">{loading ? "Sending..." : "Send Message"} </span>
                 <span className="text-2xl">
                   <BiMailSend />
                 </span>
