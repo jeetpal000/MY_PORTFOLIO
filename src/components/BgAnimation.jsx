@@ -1,9 +1,6 @@
-import React from 'react'
-
+import "../../src/index.css"
 const BgAnimation = () => {
-  return (
-    <div className='move blur-2xl'></div>
-  )
-}
+  return <div className="bg-animation"></div>;
+};
 
-export default BgAnimation
+export default BgAnimation;

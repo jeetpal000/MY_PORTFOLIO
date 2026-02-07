@@ -6,14 +6,12 @@ import ContactPage from "./pages/ContactPage.jsx";
 import CopyrightPage from "./pages/CopyrightPage.jsx"
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import BgAnimation from "./components/BgAnimation.jsx";
-
 
 
 function Home() {
   return (
   <div className="relative">
-    {/* <BgAnimation /> */}
+
     <main className="max-w-360 mx-auto font-inter overflow-hidden">
       <LandingPage />
       <AboutPage />

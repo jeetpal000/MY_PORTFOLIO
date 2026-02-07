@@ -21,7 +21,7 @@ html, body{
     scroll-behavior: smooth;
     /* cursor: none; */
     position: relative;
- 
+    font-family: "inter", sans-serif, system-ui;
 }
 
 
