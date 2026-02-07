@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mx-auto  backdrop-blur-md">
       <div className={`bg-[#2c255178] max-w-360 shadow-2xl  mx-auto flex justify-between items-center ${isOpen? "items-start w-[60%] mr-0 ": ""}`}>
-        <div className="py-2 px-4 text-5xl font-black font-agbalumo max-sm:py-0 max-sm:text-xl">
+        <div className="py-2 px-4 text-5xl font-black max-sm:py-0 max-sm:text-xl">
           <NavLink onClick={()=>setIsOpen(false)} to="/" className="relative inline-block">
             <span
               className={`bg-linear-to-r from-blue-500 via-purple-500 to-pink-500
