@@ -1,4 +1,12 @@
-
-{"rewrites": [
-    {"source": "/(.*)", "destination": "/"}
-]}
+{
+  "rewrites": [
+    {
+      "source": "/jobportal/:match*",
+      "destination": "https://jobportal.vercel.app/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
