@@ -61,6 +61,7 @@ const Contact = () => {
           </p>
         </div>
         <div data-aos="fade-up"  class="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10 max-sm:justify-between">
+          <div className="box flex items-center justify-center rounded-full">
           <a 
             className="bg-[#8b98a5] p-4 max-sm:p-3 rounded-full text-gray-800 text-2xl hover:bg-[#16F2B3] duration-100 hover:scale-105"
             target="_blank"
@@ -68,6 +69,8 @@ const Contact = () => {
           >
             <FaInstagram />
           </a>
+          </div>
+         <div className="box flex items-center justify-center rounded-full">
           <a
             className="bg-[#8b98a5] p-4 max-sm:p-3 rounded-full text-gray-800 text-2xl hover:bg-[#16F2B3] duration-100 hover:scale-105"
             target="_blank"
@@ -75,6 +78,8 @@ const Contact = () => {
           >
             <FaGithub />
           </a>
+          </div>
+           <div className="box flex items-center justify-center rounded-full">
           <a
             className="bg-[#8b98a5] p-4 max-sm:p-3 rounded-full text-gray-800 text-2xl hover:bg-[#16F2B3] duration-100 hover:scale-105"
             target="_blank"
@@ -82,6 +87,8 @@ const Contact = () => {
           >
             <FaLinkedinIn />
           </a>
+          </div>
+           <div className="box flex items-center justify-center rounded-full">
           <a
             className="bg-[#8b98a5] p-4 max-sm:p-3 rounded-full text-gray-800 text-2xl hover:bg-[#16F2B3] duration-100 hover:scale-105"
             target="_blank"
@@ -89,6 +96,7 @@ const Contact = () => {
           >
             <FaXTwitter />
           </a>
+          </div>
         </div>
       </div>
       <div  className="max-w-3xl mt-10 text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">

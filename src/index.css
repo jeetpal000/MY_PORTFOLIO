@@ -211,10 +211,11 @@ html, body{
   background-position: center center;
 
   animation: bg-spin 3s linear infinite;
+  z-index: -1;
 }
 
 .box:hover {
-  /* animation-play-state: paused; */
+  animation-play-state: paused;
 }
 
 @keyframes bg-spin {
