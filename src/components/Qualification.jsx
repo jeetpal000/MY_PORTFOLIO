@@ -17,7 +17,7 @@ const Qualification = () => {
       {qualification.map((qualification, type) => (
         <div data-aos="fade-up"
           key={type}
-          className="relative hover:p-0.5 transition-all overflow-hidden duration-100 rounded-xl shimmerEffect my-4 max-sm:my-2 cursor-pointer"
+          className="relative hover:p-0.5 transition-all overflow-hidden duration-100 rounded-xl shimmerEffect my-4 max-sm:my-2"
         >
           <div className="relative rounded-xl bg-[#140234] py-4 px-7 max-sm:p-3 hover:drop-shadow-[0_0_40px_#1e1463]">
             <p className=" text-center text-xl max-sm:text-[16px] font-bold text-green-500">{qualification.year}</p>

@@ -20,9 +20,9 @@ const About = () => {
             <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       <div className=" w-1/2 p-3 flex items-start justify-center max-sm:order-2">
-      <Tilt perspective={500}  className="transform-3d ">
+      <Tilt perspective={500}  className="transform-3d">
 
-        <div data-aos="fade-up" data-aos-offset="200" className="w-50 h-62.5 ml-20 border-2 border-blue-500 hover:border-pink-500 overflow-hidden translate-z-14 rounded-2xl shadow-[0_0_10px_0px_gray] duration-500 max-sm:ml-0">
+        <div data-aos="fade-up" data-aos-offset="200" className="w-50 h-62.5 ml-20 border-2 border-blue-500 hover:border-pink-500 overflow-hidden translate-z-14 rounded-2xl shadow-[0_0_10px_0px_gray] duration-500 max-sm:ml-0 box">
           <img
             src={MyPhoto}
             alt="" title="Hey whats'up👋🏻"

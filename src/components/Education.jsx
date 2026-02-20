@@ -20,7 +20,7 @@ const Education = () => {
       <main className="flex relative justify-between max-sm:flex-wrap ">
 
       <div data-aos="fade-up"  className="w-[30%] max-sm:w-full">
-        <div className="absolute w-1/5 h-1/5 top-60 max-sm:top-30 left-5 inset-0 rounded-4xl bg-linear-to-r from-[#0000ff8c] via-[#80008080] to-[#0011ff87] blur-2xl"></div>
+        {/* <div className="absolute w-1/5 h-1/5 top-60 max-sm:top-30 left-5 inset-0 rounded-4xl bg-linear-to-r from-[#0000ff8c] via-[#80008080] to-[#0011ff87] blur-2xl"></div> */}
         <img className="movebin absolute top-18 max-sm:top-50" src={bin} alt="" />
         <div className="w-full movelaptop absolute top-20 max-sm:top-50 cursor-wait">
           <img className=" absolute top-0" src={laptop} alt="" />

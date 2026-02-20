@@ -127,13 +127,13 @@ html, body{
   /* padding: 1px; */
   border-radius: inherit;
   background: linear-gradient(
-    270deg,
-    #ff00ff,
-    #00ffff,
-    #ff00ff
+    90deg,
+    rgb(255, 0, 0),
+    #001aff,
+    #ff0000
   );
   background-size: 200% 200%;
-  animation: borderGlow 3s linear infinite;
+  animation: borderGlow 2s linear infinite;
   /* -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -179,3 +179,53 @@ html, body{
   transform: scale(1) rotate(360deg);
  }
 }
+
+
+.box {
+  --border-angle: 0turn; 
+
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    rgb(34, 17, 51),
+    rgb(17, 17, 34) 5%,
+    rgba(17, 17, 34) 60%,
+    #213 95%
+  );
+
+  border: solid 5px transparent;
+  /* border-radius: 2em; */
+
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    #f03 99%,
+    transparent
+  );
+
+  background:
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+}
+
+.box:hover {
+  /* animation-play-state: paused; */
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
